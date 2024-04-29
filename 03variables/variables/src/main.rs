@@ -1,9 +1,21 @@
 fn main() {
 
+    shadowing_types();
+    println!("=========");
     shadowing();
-    //mutables();
-    //constants();
+    println!("=========");
+    mutables();
+    println!("=========");
+    constants();
     
+}
+
+fn shadowing_types() {
+
+    let x = "TESTE";
+    println!("{x}");
+    let x = x.len();
+    println!("{x}");
 }
 
 fn shadowing() {
